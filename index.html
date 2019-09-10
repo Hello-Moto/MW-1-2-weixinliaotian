@@ -150,13 +150,7 @@
         var list = document.querySelector(".list")
         var monster = true
         img.onclick = function(){
-            if(monster){
-                img.src = "img/monster.png"
-                monster = !monster
-            }else{
-                img.src = "img/monster2.png"
-                monster = !monster
-            }
+            img.src = monster? "img/monster2.png" : "img/monster.png"
         }
         button.onclick = function(){
             var val = text.value
